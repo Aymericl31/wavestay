@@ -1,0 +1,88 @@
+export const rooms = [
+  {
+    id: 'classique',
+    name: 'Chambre Classique',
+    shortDescription: 'Chambre élégante de 22 m² avec lit double, idéale pour un séjour parisien tout en confort.',
+    longDescription:
+      "Une chambre raffinée au cœur de Paris, pensée pour le voyageur en quête d'un séjour authentique. Décoration contemporaine aux tons chauds, literie haut de gamme, et tout le nécessaire pour une nuit reposante après une journée à découvrir la capitale.",
+    pricePerNight: 189,
+    surface: 22,
+    bedType: 'Lit double Queen Size',
+    maxGuests: 2,
+    images: [
+      'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80',
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'TV écran plat 42"',
+      'Salle de bain privative',
+      'Sèche-cheveux',
+      'Coffre-fort',
+      'Bouteille d\'eau offerte',
+    ],
+  },
+  {
+    id: 'executive',
+    name: 'Suite Exécutive',
+    shortDescription: 'Suite spacieuse de 38 m² avec coin salon et vue sur la cour intérieure, parfaite pour les voyages d\'affaires.',
+    longDescription:
+      "Notre Suite Exécutive offre 38 m² de confort raffiné. Espace de travail dédié, coin salon avec canapé, et tous les services premium attendus pour un séjour professionnel ou un week-end privilégié à Paris.",
+    pricePerNight: 289,
+    surface: 38,
+    bedType: 'Lit King Size',
+    maxGuests: 2,
+    images: [
+      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
+      'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80',
+      'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=1200&q=80',
+      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'Bureau et coin salon',
+      'TV écran plat 55"',
+      'Machine Nespresso',
+      'Minibar',
+      'Peignoir et chaussons',
+      'Service en chambre 24/7',
+    ],
+  },
+  {
+    id: 'presidentielle',
+    name: 'Suite Présidentielle',
+    shortDescription: 'Suite d\'exception de 75 m² avec terrasse privée et vue panoramique sur les toits de Paris.',
+    longDescription:
+      "L'expérience ultime à Paris. 75 m² d'élégance avec terrasse privative offrant une vue à couper le souffle sur la capitale. Dressing, salle de bain en marbre avec baignoire îlot, et services personnalisés pour un séjour d'exception.",
+    pricePerNight: 689,
+    surface: 75,
+    bedType: 'Lit King Size + canapé convertible',
+    maxGuests: 4,
+    images: [
+      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&q=80',
+      'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&q=80',
+      'https://images.unsplash.com/photo-1551776235-dde6d482980b?w=1200&q=80',
+      'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80',
+    ],
+    amenities: [
+      'Terrasse privée 20 m²',
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'Salon séparé',
+      'Salle de bain en marbre',
+      'Baignoire îlot',
+      'TV écran plat 75"',
+      'Bar privatif',
+      'Conciergerie dédiée',
+      'Petit-déjeuner inclus',
+    ],
+  },
+]
+
+export function getRoomById(id) {
+  return rooms.find((room) => room.id === id)
+}
