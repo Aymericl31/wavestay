@@ -81,6 +81,32 @@ export const rooms = [
       'Petit-déjeuner inclus',
     ],
   },
+  {
+    id: 'extra-2-beds',
+    name: 'Extra Room 2 Beds',
+    shortDescription: 'Chambre spacieuse de 32 m² avec deux lits simples, idéale pour deux voyageurs ou une escapade entre amis.',
+    longDescription:
+      "Une chambre confortable et pratique de 32 m², équipée de deux lits simples pour accueillir deux personnes dans un espace bien pensé. Décoration moderne et fonctionnelle, parfaite pour un séjour en duo à Paris.",
+    pricePerNight: 229,
+    surface: 32,
+    bedType: '2 lits simples',
+    maxGuests: 2,
+    images: [
+      'https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=1200&q=80',
+      'https://images.unsplash.com/photo-1631049421450-348ccd7f8949?w=1200&q=80',
+      'https://images.unsplash.com/photo-1586105251261-72a756497a11?w=1200&q=80',
+      'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'TV écran plat 42"',
+      'Salle de bain privative',
+      'Sèche-cheveux',
+      'Coffre-fort',
+      'Bouteilles d\'eau offertes',
+    ],
+  },
 ]
 
 export function getRoomById(id) {
