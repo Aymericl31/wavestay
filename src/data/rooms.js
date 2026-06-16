@@ -53,6 +53,33 @@ export const rooms = [
     ],
   },
   {
+    id: 'extra-room-2beds',
+    name: 'Extra room 2 beds',
+    shortDescription: 'Chambre conviviale de 28 m² avec deux lits simples, idéale pour deux voyageurs ou des amis.',
+    longDescription:
+      "Une chambre spacieuse et pratique équipée de deux lits simples confortables. Parfaite pour deux personnes voyageant ensemble, elle offre tout le confort nécessaire pour un séjour agréable à Paris : décoration soignée, espace de rangement généreux et salle de bain privative.",
+    pricePerNight: 229,
+    surface: 28,
+    bedType: '2 lits simples',
+    maxGuests: 2,
+    images: [
+      'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80',
+      'https://images.unsplash.com/photo-1586105449897-20b5efeb3233?w=1200&q=80',
+      'https://images.unsplash.com/photo-1631049552057-403cdb8f0658?w=1200&q=80',
+      'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'TV écran plat 42"',
+      'Salle de bain privative',
+      'Sèche-cheveux',
+      'Coffre-fort',
+      'Bouteille d\'eau offerte',
+      'Rangements individuels',
+    ],
+  },
+  {
     id: 'presidentielle',
     name: 'Suite Présidentielle',
     shortDescription: 'Suite d\'exception de 75 m² avec terrasse privée et vue panoramique sur les toits de Paris.',
