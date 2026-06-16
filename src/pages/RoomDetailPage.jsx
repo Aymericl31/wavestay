@@ -2,23 +2,23 @@ import { Link, useParams } from 'react-router'
 import { getRoomById } from '../data/rooms'
 import RoomGallery from '../components/RoomGallery'
 import BookingWidget from '../components/BookingWidget'
+import { useI18n } from '../i18n/index.jsx'
 
 export default function RoomDetailPage() {
   const { id } = useParams()
-  const room = getRoomById(id)
+  const { t, lang } = useI18n()
+  const room = getRoomById(id, lang)
 
   if (!room) {
     return (
       <div className="mx-auto max-w-3xl px-6 py-24 text-center">
-        <h1 className="text-3xl font-semibold text-ink">Chambre introuvable</h1>
-        <p className="mt-3 text-slate-600">
-          Cette chambre n'existe pas ou n'est plus disponible.
-        </p>
+        <h1 className="text-3xl font-semibold text-ink">{t('room.notFound')}</h1>
+        <p className="mt-3 text-slate-600">{t('room.notFoundDesc')}</p>
         <Link
           to="/"
           className="mt-6 inline-block rounded-full bg-ink px-6 py-2 text-sm font-medium text-white"
         >
-          Retour aux chambres
+          {t('room.backToRooms')}
         </Link>
       </div>
     )
@@ -28,7 +28,7 @@ export default function RoomDetailPage() {
     <div className="mx-auto max-w-6xl px-6 py-10">
       <nav className="text-sm text-slate-500">
         <Link to="/" className="hover:text-ink">
-          Accueil
+          {t('room.home')}
         </Link>{' '}
         / <span className="text-ink">{room.name}</span>
       </nav>
@@ -37,7 +37,8 @@ export default function RoomDetailPage() {
         <div>
           <h1 className="text-3xl font-semibold text-ink sm:text-4xl">{room.name}</h1>
           <p className="mt-2 text-sm text-slate-500">
-            {room.surface} m² · {room.bedType} · jusqu'à {room.maxGuests} personne{room.maxGuests > 1 ? 's' : ''}
+            {room.surface} m² · {room.bedType} · {t('room.upTo')} {room.maxGuests}{' '}
+            {room.maxGuests > 1 ? t('room.persons') : t('room.person')}
           </p>
         </div>
       </header>
@@ -47,12 +48,12 @@ export default function RoomDetailPage() {
           <RoomGallery images={room.images} alt={room.name} />
 
           <section>
-            <h2 className="text-xl font-semibold text-ink">À propos de cette chambre</h2>
+            <h2 className="text-xl font-semibold text-ink">{t('room.about')}</h2>
             <p className="mt-3 leading-relaxed text-slate-600">{room.longDescription}</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-ink">Équipements</h2>
+            <h2 className="text-xl font-semibold text-ink">{t('room.amenities')}</h2>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {room.amenities.map((a) => (
                 <li key={a} className="flex items-start gap-3 text-sm text-slate-700">
@@ -64,10 +65,9 @@ export default function RoomDetailPage() {
           </section>
 
           <section className="rounded-2xl bg-cream p-6">
-            <h2 className="text-xl font-semibold text-ink">Politique d'annulation</h2>
+            <h2 className="text-xl font-semibold text-ink">{t('room.cancellation')}</h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
-              Annulation gratuite jusqu'à 24h avant l'arrivée. Au-delà, première nuit
-              facturée. Aucun acompte demandé à la réservation.
+              {t('room.cancellationText')}
             </p>
           </section>
         </div>

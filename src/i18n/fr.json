@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "rooms": "Nos chambres",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "footer": {
+    "tagline": "L'art du séjour parisien. Une sélection de chambres pensées pour les voyageurs exigeants.",
+    "contact": "Contact",
+    "info": "Informations",
+    "address": "12 rue de la Paix, 75002 Paris",
+    "phone": "+33 1 23 45 67 89",
+    "email": "contact@wavestay.fr",
+    "legalNotice": "Mentions légales",
+    "terms": "CGV",
+    "privacy": "Politique de confidentialité",
+    "demo": "Démo Wavestone"
+  },
+  "home": {
+    "location": "Paris · 1er arrondissement",
+    "heroTitle": "Votre séjour à Paris commence ici.",
+    "heroSubtitle": "Une sélection de chambres et suites raffinées, à deux pas de la place Vendôme.",
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "guests": "Voyageurs",
+    "search": "Rechercher",
+    "sectionLabel": "Nos chambres",
+    "roomsCount": "{{count}} chambres disponibles",
+    "ratesSuffix": "nuit",
+    "person": "voyageur",
+    "persons": "voyageurs"
+  },
+  "room": {
+    "home": "Accueil",
+    "notFound": "Chambre introuvable",
+    "notFoundDesc": "Cette chambre n'existe pas ou n'est plus disponible.",
+    "backToRooms": "Retour aux chambres",
+    "about": "À propos de cette chambre",
+    "amenities": "Équipements",
+    "cancellation": "Politique d'annulation",
+    "cancellationText": "Annulation gratuite jusqu'à 24h avant l'arrivée. Au-delà, première nuit facturée. Aucun acompte demandé à la réservation.",
+    "fromPrice": "À partir de",
+    "perNight": "/ nuit",
+    "viewRoom": "Voir la chambre",
+    "upTo": "jusqu'à",
+    "person": "personne",
+    "persons": "personnes"
+  },
+  "widget": {
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "guests": "Voyageurs",
+    "freeCancellation": "Annulation gratuite",
+    "taxes": "Taxes et frais",
+    "taxesIncluded": "Inclus",
+    "total": "Total",
+    "book": "Réserver",
+    "night": "nuit",
+    "nights": "nuits",
+    "person": "personne",
+    "persons": "personnes"
+  },
+  "booking": {
+    "title": "Finaliser votre réservation",
+    "yourDetails": "Vos coordonnées",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "payment": "Paiement",
+    "paymentInfo": "Aucun paiement n'est demandé à la réservation. Le règlement s'effectue sur place à votre arrivée.",
+    "confirmBtn": "Confirmer la réservation · {{total}}€",
+    "confirming": "Confirmation en cours…",
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "travelers": "Voyageurs",
+    "nights": "Nuits",
+    "total": "Total",
+    "taxes": "Taxes et frais",
+    "taxesIncluded": "Inclus",
+    "notFound": "Chambre introuvable",
+    "backHome": "Retour à l'accueil",
+    "reservation": "Réservation",
+    "person": "personne",
+    "persons": "personnes"
+  },
+  "confirmation": {
+    "title": "Réservation confirmée",
+    "thanks": "Merci {{firstName}} ! Un email de confirmation a été envoyé à",
+    "reservationNumber": "Numéro de réservation",
+    "room": "Chambre",
+    "travelers": "Voyageurs",
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "total": "Total ({{count}} nuit{{plural}})",
+    "backHome": "Retour à l'accueil",
+    "person": "personne",
+    "persons": "personnes"
+  },
+  "rooms": {
+    "classique": {
+      "name": "Chambre Classique",
+      "shortDescription": "Chambre élégante de 22 m² avec lit double, idéale pour un séjour parisien tout en confort.",
+      "longDescription": "Une chambre raffinée au cœur de Paris, pensée pour le voyageur en quête d'un séjour authentique. Décoration contemporaine aux tons chauds, literie haut de gamme, et tout le nécessaire pour une nuit reposante après une journée à découvrir la capitale.",
+      "bedType": "Lit double Queen Size",
+      "amenities": [
+        "Wi-Fi haut débit gratuit",
+        "Climatisation",
+        "TV écran plat 42\"",
+        "Salle de bain privative",
+        "Sèche-cheveux",
+        "Coffre-fort",
+        "Bouteille d'eau offerte"
+      ]
+    },
+    "executive": {
+      "name": "Suite Exécutive",
+      "shortDescription": "Suite spacieuse de 38 m² avec coin salon et vue sur la cour intérieure, parfaite pour les voyages d'affaires.",
+      "longDescription": "Notre Suite Exécutive offre 38 m² de confort raffiné. Espace de travail dédié, coin salon avec canapé, et tous les services premium attendus pour un séjour professionnel ou un week-end privilégié à Paris.",
+      "bedType": "Lit King Size",
+      "amenities": [
+        "Wi-Fi haut débit gratuit",
+        "Climatisation",
+        "Bureau et coin salon",
+        "TV écran plat 55\"",
+        "Machine Nespresso",
+        "Minibar",
+        "Peignoir et chaussons",
+        "Service en chambre 24/7"
+      ]
+    },
+    "presidentielle": {
+      "name": "Suite Présidentielle",
+      "shortDescription": "Suite d'exception de 75 m² avec terrasse privée et vue panoramique sur les toits de Paris.",
+      "longDescription": "L'expérience ultime à Paris. 75 m² d'élégance avec terrasse privative offrant une vue à couper le souffle sur la capitale. Dressing, salle de bain en marbre avec baignoire îlot, et services personnalisés pour un séjour d'exception.",
+      "bedType": "Lit King Size + canapé convertible",
+      "amenities": [
+        "Terrasse privée 20 m²",
+        "Wi-Fi haut débit gratuit",
+        "Climatisation",
+        "Salon séparé",
+        "Salle de bain en marbre",
+        "Baignoire îlot",
+        "TV écran plat 75\"",
+        "Bar privatif",
+        "Conciergerie dédiée",
+        "Petit-déjeuner inclus"
+      ]
+    }
+  }
+}
