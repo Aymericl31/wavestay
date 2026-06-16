@@ -1,11 +1,24 @@
 import { Link, Navigate, useLocation } from 'react-router'
+import { useI18n } from '../i18n/index.jsx'
 
 export default function ConfirmationPage() {
   const { state } = useLocation()
+  const { t, lang } = useI18n()
 
   if (!state) {
     return <Navigate to="/" replace />
   }
+
+  function formatDate(iso) {
+    return new Date(iso).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  }
+
+  const nightsPlural = state.nights > 1 ? 's' : ''
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
@@ -24,39 +37,41 @@ export default function ConfirmationPage() {
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <h1 className="mt-6 text-3xl font-semibold text-ink">Réservation confirmée</h1>
+        <h1 className="mt-6 text-3xl font-semibold text-ink">{t('confirmation.title')}</h1>
         <p className="mt-3 text-slate-600">
-          Merci {state.firstName} ! Un email de confirmation a été envoyé à{' '}
+          {t('confirmation.thanks', { firstName: state.firstName })}{' '}
           <span className="font-medium text-ink">{state.email}</span>.
         </p>
 
         <div className="mt-8 rounded-xl bg-cream p-6 text-left">
           <p className="text-xs uppercase tracking-wide text-slate-500">
-            Numéro de réservation
+            {t('confirmation.reservationNumber')}
           </p>
           <p className="mt-1 text-2xl font-semibold text-ink">{state.reference}</p>
 
           <dl className="mt-6 grid grid-cols-2 gap-4 text-sm">
             <div>
-              <dt className="text-slate-500">Chambre</dt>
+              <dt className="text-slate-500">{t('confirmation.room')}</dt>
               <dd className="mt-1 font-medium text-ink">{state.roomName}</dd>
             </div>
             <div>
-              <dt className="text-slate-500">Voyageurs</dt>
+              <dt className="text-slate-500">{t('confirmation.travelers')}</dt>
               <dd className="mt-1 font-medium text-ink">
-                {state.guests} personne{state.guests > 1 ? 's' : ''}
+                {state.guests} {state.guests > 1 ? t('confirmation.persons') : t('confirmation.person')}
               </dd>
             </div>
             <div>
-              <dt className="text-slate-500">Arrivée</dt>
+              <dt className="text-slate-500">{t('confirmation.checkIn')}</dt>
               <dd className="mt-1 font-medium text-ink">{formatDate(state.checkIn)}</dd>
             </div>
             <div>
-              <dt className="text-slate-500">Départ</dt>
+              <dt className="text-slate-500">{t('confirmation.checkOut')}</dt>
               <dd className="mt-1 font-medium text-ink">{formatDate(state.checkOut)}</dd>
             </div>
             <div className="col-span-2 border-t border-slate-200 pt-4">
-              <dt className="text-slate-500">Total ({state.nights} nuit{state.nights > 1 ? 's' : ''})</dt>
+              <dt className="text-slate-500">
+                {t('confirmation.total', { count: state.nights, plural: nightsPlural })}
+              </dt>
               <dd className="mt-1 text-xl font-semibold text-ink">{state.total}€</dd>
             </div>
           </dl>
@@ -66,18 +81,9 @@ export default function ConfirmationPage() {
           to="/"
           className="mt-8 inline-block rounded-full bg-ink px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-slate-700"
         >
-          Retour à l'accueil
+          {t('confirmation.backHome')}
         </Link>
       </div>
     </div>
   )
-}
-
-function formatDate(iso) {
-  return new Date(iso).toLocaleDateString('fr-FR', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  })
 }

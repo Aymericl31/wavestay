@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router'
+import { useI18n } from '../i18n/index.jsx'
 
 function todayPlus(days) {
   const d = new Date()
@@ -9,6 +10,7 @@ function todayPlus(days) {
 
 export default function BookingWidget({ room }) {
   const navigate = useNavigate()
+  const { t } = useI18n()
   const [checkIn, setCheckIn] = useState(todayPlus(7))
   const [checkOut, setCheckOut] = useState(todayPlus(8))
   const [guests, setGuests] = useState(2)
@@ -35,16 +37,16 @@ export default function BookingWidget({ room }) {
     >
       <div className="flex items-baseline justify-between">
         <p className="text-2xl font-semibold text-ink">
-          {room.pricePerNight}€<span className="text-sm font-normal text-slate-500"> / nuit</span>
+          {room.pricePerNight}€<span className="text-sm font-normal text-slate-500"> {t('room.perNight')}</span>
         </p>
         <span className="rounded-full bg-cream px-3 py-1 text-xs font-medium text-gold-dark">
-          Annulation gratuite
+          {t('widget.freeCancellation')}
         </span>
       </div>
 
       <div className="mt-5 grid grid-cols-2 gap-3">
         <label className="flex flex-col gap-1 rounded-lg border border-slate-200 p-3 focus-within:border-gold">
-          <span className="text-xs font-medium text-slate-500">Arrivée</span>
+          <span className="text-xs font-medium text-slate-500">{t('widget.checkIn')}</span>
           <input
             type="date"
             value={checkIn}
@@ -54,7 +56,7 @@ export default function BookingWidget({ room }) {
           />
         </label>
         <label className="flex flex-col gap-1 rounded-lg border border-slate-200 p-3 focus-within:border-gold">
-          <span className="text-xs font-medium text-slate-500">Départ</span>
+          <span className="text-xs font-medium text-slate-500">{t('widget.checkOut')}</span>
           <input
             type="date"
             value={checkOut}
@@ -67,7 +69,7 @@ export default function BookingWidget({ room }) {
       </div>
 
       <label className="mt-3 flex flex-col gap-1 rounded-lg border border-slate-200 p-3 focus-within:border-gold">
-        <span className="text-xs font-medium text-slate-500">Voyageurs</span>
+        <span className="text-xs font-medium text-slate-500">{t('widget.guests')}</span>
         <select
           value={guests}
           onChange={(e) => setGuests(Number(e.target.value))}
@@ -75,7 +77,7 @@ export default function BookingWidget({ room }) {
         >
           {Array.from({ length: room.maxGuests }, (_, i) => i + 1).map((n) => (
             <option key={n} value={n}>
-              {n} personne{n > 1 ? 's' : ''}
+              {n} {n > 1 ? t('widget.persons') : t('widget.person')}
             </option>
           ))}
         </select>
@@ -84,16 +86,16 @@ export default function BookingWidget({ room }) {
       <dl className="mt-5 space-y-2 border-t border-slate-100 pt-5 text-sm">
         <div className="flex justify-between text-slate-600">
           <dt>
-            {room.pricePerNight}€ × {nights} nuit{nights > 1 ? 's' : ''}
+            {room.pricePerNight}€ × {nights} {nights > 1 ? t('widget.nights') : t('widget.night')}
           </dt>
           <dd>{total}€</dd>
         </div>
         <div className="flex justify-between text-slate-600">
-          <dt>Taxes et frais</dt>
-          <dd>Inclus</dd>
+          <dt>{t('widget.taxes')}</dt>
+          <dd>{t('widget.taxesIncluded')}</dd>
         </div>
         <div className="flex justify-between border-t border-slate-100 pt-3 text-base font-semibold text-ink">
-          <dt>Total</dt>
+          <dt>{t('widget.total')}</dt>
           <dd>{total}€</dd>
         </div>
       </dl>
@@ -102,7 +104,7 @@ export default function BookingWidget({ room }) {
         type="submit"
         className="mt-6 w-full rounded-full bg-gold py-3 text-sm font-semibold text-white transition-colors hover:bg-gold-dark"
       >
-        Réserver
+        {t('widget.book')}
       </button>
     </form>
   )

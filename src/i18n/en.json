@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "rooms": "Our rooms",
+    "contact": "Contact",
+    "book": "Book now"
+  },
+  "footer": {
+    "tagline": "The art of Parisian living. A curated selection of rooms for discerning travellers.",
+    "contact": "Contact",
+    "info": "Information",
+    "address": "12 rue de la Paix, 75002 Paris",
+    "phone": "+33 1 23 45 67 89",
+    "email": "contact@wavestay.fr",
+    "legalNotice": "Legal notice",
+    "terms": "Terms & conditions",
+    "privacy": "Privacy policy",
+    "demo": "Wavestone Demo"
+  },
+  "home": {
+    "location": "Paris · 1st arrondissement",
+    "heroTitle": "Your Parisian stay starts here.",
+    "heroSubtitle": "A curated selection of refined rooms and suites, steps from Place Vendôme.",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "search": "Search",
+    "sectionLabel": "Our rooms",
+    "roomsCount": "{{count}} rooms available",
+    "ratesSuffix": "night",
+    "person": "guest",
+    "persons": "guests"
+  },
+  "room": {
+    "home": "Home",
+    "notFound": "Room not found",
+    "notFoundDesc": "This room does not exist or is no longer available.",
+    "backToRooms": "Back to rooms",
+    "about": "About this room",
+    "amenities": "Amenities",
+    "cancellation": "Cancellation policy",
+    "cancellationText": "Free cancellation up to 24 hours before arrival. After that, the first night will be charged. No deposit required at booking.",
+    "fromPrice": "From",
+    "perNight": "/ night",
+    "viewRoom": "View room",
+    "upTo": "up to",
+    "person": "person",
+    "persons": "people"
+  },
+  "widget": {
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "freeCancellation": "Free cancellation",
+    "taxes": "Taxes & fees",
+    "taxesIncluded": "Included",
+    "total": "Total",
+    "book": "Book now",
+    "night": "night",
+    "nights": "nights",
+    "person": "person",
+    "persons": "people"
+  },
+  "booking": {
+    "title": "Complete your booking",
+    "yourDetails": "Your details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "payment": "Payment",
+    "paymentInfo": "No payment is required at the time of booking. Payment is made on-site upon arrival.",
+    "confirmBtn": "Confirm booking · {{total}}€",
+    "confirming": "Confirming…",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "travelers": "Guests",
+    "nights": "Nights",
+    "total": "Total",
+    "taxes": "Taxes & fees",
+    "taxesIncluded": "Included",
+    "notFound": "Room not found",
+    "backHome": "Back to home",
+    "reservation": "Booking",
+    "person": "person",
+    "persons": "people"
+  },
+  "confirmation": {
+    "title": "Booking confirmed",
+    "thanks": "Thank you {{firstName}}! A confirmation email has been sent to",
+    "reservationNumber": "Booking reference",
+    "room": "Room",
+    "travelers": "Guests",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "total": "Total ({{count}} night{{plural}})",
+    "backHome": "Back to home",
+    "person": "person",
+    "persons": "people"
+  },
+  "rooms": {
+    "classique": {
+      "name": "Classic Room",
+      "shortDescription": "Elegant 22 m² room with a double bed, ideal for a comfortable Parisian stay.",
+      "longDescription": "A refined room in the heart of Paris, designed for the traveller seeking an authentic experience. Contemporary décor in warm tones, premium bedding, and everything you need for a restful night after a day exploring the capital.",
+      "bedType": "Queen Size double bed",
+      "amenities": [
+        "Free high-speed Wi-Fi",
+        "Air conditioning",
+        "42\" flat-screen TV",
+        "Private bathroom",
+        "Hairdryer",
+        "Safe",
+        "Complimentary water bottle"
+      ]
+    },
+    "executive": {
+      "name": "Executive Suite",
+      "shortDescription": "Spacious 38 m² suite with a lounge area and courtyard view, perfect for business travel.",
+      "longDescription": "Our Executive Suite offers 38 m² of refined comfort. Dedicated workspace, lounge area with sofa, and all the premium services expected for a professional stay or a privileged weekend in Paris.",
+      "bedType": "King Size bed",
+      "amenities": [
+        "Free high-speed Wi-Fi",
+        "Air conditioning",
+        "Desk and lounge area",
+        "55\" flat-screen TV",
+        "Nespresso machine",
+        "Minibar",
+        "Bathrobe and slippers",
+        "24/7 room service"
+      ]
+    },
+    "presidentielle": {
+      "name": "Presidential Suite",
+      "shortDescription": "Exceptional 75 m² suite with a private terrace and panoramic views over the Parisian rooftops.",
+      "longDescription": "The ultimate Paris experience. 75 m² of elegance with a private terrace offering breathtaking views of the capital. Walk-in wardrobe, marble bathroom with freestanding bathtub, and personalised services for an exceptional stay.",
+      "bedType": "King Size bed + sofa bed",
+      "amenities": [
+        "20 m² private terrace",
+        "Free high-speed Wi-Fi",
+        "Air conditioning",
+        "Separate living room",
+        "Marble bathroom",
+        "Freestanding bathtub",
+        "75\" flat-screen TV",
+        "Private bar",
+        "Dedicated concierge",
+        "Breakfast included"
+      ]
+    }
+  }
+}
