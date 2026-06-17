@@ -81,6 +81,37 @@ export const rooms = [
       'Petit-déjeuner inclus',
     ],
   },
+  {
+    id: 'room-suite-presidentielle',
+    name: 'room suite présidentielle',
+    shortDescription: 'Suite présidentielle d\'exception de 90 m² avec salon privatif, terrasse panoramique et services de conciergerie haut de gamme.',
+    longDescription:
+      "La room suite présidentielle est l'apogée du luxe à Paris. Avec 90 m² d'espace entièrement privatisé, elle offre un salon de réception, une chambre royale avec lit King Size, une salle de bain en marbre équipée d'une baignoire îlot et d'une douche à l'italienne, ainsi qu'une terrasse de 30 m² offrant une vue panoramique sur les toits de Paris. Un service de conciergerie dédié, un chef à disposition sur demande et une décoration personnalisable font de ce séjour une expérience unique et mémorable.",
+    pricePerNight: 1200,
+    surface: 90,
+    bedType: 'Lit King Size Emperor + canapé convertible',
+    maxGuests: 6,
+    images: [
+      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&q=80',
+      'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&q=80',
+      'https://images.unsplash.com/photo-1551776235-dde6d482980b?w=1200&q=80',
+      'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80',
+    ],
+    amenities: [
+      'Terrasse privée 30 m²',
+      'Wi-Fi haut débit dédié',
+      'Climatisation multi-zones',
+      'Salon de réception',
+      'Salle de bain en marbre',
+      'Baignoire îlot et douche italienne',
+      'TV écran plat 85"',
+      'Bar privatif premium',
+      'Conciergerie dédiée 24/7',
+      'Petit-déjeuner gastronomique inclus',
+      'Chef à disposition sur demande',
+      'Service de voiturier',
+    ],
+  },
 ]
 
 export function getRoomById(id) {
