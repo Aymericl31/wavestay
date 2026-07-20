@@ -81,6 +81,35 @@ export const rooms = [
       'Petit-déjeuner inclus',
     ],
   },
+  {
+    id: 'familiale',
+    name: 'Chambre Familiale 6 personnes',
+    shortDescription: 'Grande chambre familiale de 55 m² avec 3 lits doubles, parfaite pour accueillir toute la famille en toute sérénité.',
+    longDescription:
+      "Conçue pour les familles et groupes d'amis, cette spacieuse chambre de 55 m² offre tout le confort nécessaire pour un séjour parisien inoubliable. Trois lits doubles permettent d'accueillir jusqu'à 6 personnes, tandis que la grande salle de bain et l'espace de vie genereux garantissent à chacun son intimité. Décoration chaleureuse et contemporaine, vue sur jardin intérieur.",
+    pricePerNight: 449,
+    surface: 55,
+    bedType: '3 lits doubles',
+    maxGuests: 6,
+    images: [
+      'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1200&q=80',
+      'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80',
+      'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'TV écran plat 55"',
+      'Grande salle de bain familiale',
+      'Sèche-cheveux',
+      'Coffre-fort',
+      'Lit bébé disponible sur demande',
+      'Jeux de société',
+      'Bouteilles d\'eau offertes',
+      'Vue sur jardin intérieur',
+    ],
+  },
 ]
 
 export function getRoomById(id) {
