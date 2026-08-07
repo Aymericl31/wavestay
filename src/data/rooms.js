@@ -81,6 +81,37 @@ export const rooms = [
       'Petit-déjeuner inclus',
     ],
   },
+  {
+    id: 'familiale-10-personnes',
+    name: 'Chambre familiale 10 personnes',
+    shortDescription: 'Suite familiale de 95 m² avec 5 chambres communicantes, idéale pour les grands groupes et familles jusqu\'à 10 personnes.',
+    longDescription:
+      "Conçue pour les grandes familles et les groupes, cette suite familiale hors norme offre 95 m² d'espace chaleureux et convivial. Cinq chambres communicantes, deux salles de bain complètes et un vaste salon commun garantissent confort et intimité à chaque membre du groupe. Décoration chaleureuse aux accents familiaux, literie premium et tous les équipements pour un séjour inoubliable à Paris.",
+    pricePerNight: 890,
+    surface: 95,
+    bedType: '3 lits doubles Queen Size + 4 lits simples (5 chambres communicantes)',
+    maxGuests: 10,
+    images: [
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80',
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation dans chaque chambre',
+      '5 chambres communicantes',
+      '2 salles de bain complètes',
+      'Grand salon commun',
+      'TV écran plat 55" dans le salon',
+      'TV dans chaque chambre',
+      'Cuisine équipée',
+      'Réfrigérateur et micro-ondes',
+      'Coffre-fort',
+      'Lit bébé sur demande',
+      'Service en chambre',
+    ],
+  },
 ]
 
 export function getRoomById(id) {
