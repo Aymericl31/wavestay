@@ -67,7 +67,7 @@ export default function HomePage() {
                 onChange={(e) => setGuests(Number(e.target.value))}
                 className="bg-transparent text-sm text-ink focus:outline-none"
               >
-                {[1, 2, 3, 4].map((n) => (
+                {[1, 2, 3, 4, 5, 6].map((n) => (
                   <option key={n} value={n}>
                     {n} personne{n > 1 ? 's' : ''}
                   </option>
