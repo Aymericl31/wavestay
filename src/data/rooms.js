@@ -53,6 +53,33 @@ export const rooms = [
     ],
   },
   {
+    id: 'familiale',
+    name: 'Chambre familiale 6 personnes',
+    shortDescription: 'Chambre spacieuse de 55 m² avec deux chambres communicantes, parfaite pour les familles nombreuses.',
+    longDescription:
+      "Conçue pour accueillir toute la famille en toute sérénité, cette chambre familiale de 55 m² dispose de deux espaces nuit communicants, d'une kitchenette équipée et d'une large salle de bain avec double vasque. Les enfants comme les parents trouveront tout le confort nécessaire pour un séjour inoubliable à Paris.",
+    pricePerNight: 449,
+    surface: 55,
+    bedType: '2 lits doubles + 2 lits superposés',
+    maxGuests: 6,
+    images: [
+      'https://images.unsplash.com/photo-1586105251261-72a756497a11?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80',
+      'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1200&q=80',
+    ],
+    amenities: [
+      'Wi-Fi haut débit gratuit',
+      'Climatisation',
+      'Kitchenette équipée',
+      'TV écran plat 55"',
+      'Salle de bain double vasque',
+      'Lits superposés sécurisés',
+      'Coffre-fort grand format',
+      'Jeux de société disponibles',
+    ],
+  },
+  {
     id: 'presidentielle',
     name: 'Suite Présidentielle',
     shortDescription: 'Suite d\'exception de 75 m² avec terrasse privée et vue panoramique sur les toits de Paris.',
